@@ -6,11 +6,15 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
+  color: #1B1B1B;
   font-family: 'Baloo Da 2', cursive;
 }
 

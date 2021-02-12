@@ -13,5 +13,26 @@
 }
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+.nav__noti {
+  background-color: var(--noti-red);
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+.nav-icon {
+  width: 40px;
 }
 
+.header-icon {
+  width: 35px;
+}
