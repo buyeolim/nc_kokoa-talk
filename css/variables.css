@@ -1,6 +1,9 @@
 :root {
-    --kokoa-yellow: #fae100;
-    --noti-red: #FF6229;
+  --kokoa-yellow: #fae100;
+  --noti-red: #ff6229;
+  --text-silver: rgba(0, 0, 0, 0.5);
 
-    --horizontal-space: 15px;
+  --horizontal-space: 15px;
+
+  --main-border: 1px solid rgba(0, 0, 0, 0.1);
 }

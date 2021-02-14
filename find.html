@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Find - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -63,7 +63,7 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span>
           <svg
@@ -82,22 +82,7 @@
           </svg>
         </span>
         <span>
-          <svg
-            class="w-6 h-6 header-icon"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-            ></path>
-          </svg>
-        </span>
-        <span>
+          <div class="screen-header__noti badge-dot"></div>
           <svg
             class="w-6 h-6 header-icon"
             fill="none"
@@ -122,58 +107,9 @@
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-      </svg>
-      Friends' Names Display
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 5l7 7-7 7"
-        ></path>
-      </svg>
-    </a>
-
-    <main class="friends-screen">
-      <!-- My profile -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://avatars.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Nicolas</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <!-- Friends' profile -->
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
           <svg
             class="w-6 h-6"
             fill="none"
@@ -185,46 +121,67 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M5 15l7-7 7 7"
+              d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"
             ></path>
           </svg>
+          <span>QR Code</span>
         </div>
+        <div class="find-icons__icon">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+            ></path>
+          </svg>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <span>Invite</span>
+        </div>
+      </div>
 
-        <!-- Friend 1 -->
-        <div class="user-component">
-          <!-- photo and name -->
-          <div class="user-component__column">
-            <img
-              src="https://avatars.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <!-- etc -->
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
       </div>
     </main>
 
@@ -234,7 +191,7 @@
           <a class="nav__link" href="friends.html">
             <svg
               class="w-6 h-6 nav-icon"
-              fill="currentColor"
+              fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +228,7 @@
           <a class="nav__link" href="find.html">
             <svg
               class="w-6 h-6 nav-icon"
-              fill="none"
+              fill="currentColor"
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
