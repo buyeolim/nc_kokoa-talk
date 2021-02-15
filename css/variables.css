@@ -2,6 +2,7 @@
   --kokoa-yellow: #fae100;
   --noti-red: #ff6229;
   --text-silver: rgba(0, 0, 0, 0.5);
+  --text-disable: rgba(170, 170, 170, 1); /* #aaaaaa */
 
   --chat-background-color: rgba(171, 193, 209, 1); /* #fabc1d1 */
   --chat-timestamp-bg-color: rgba(88, 88, 88, 0.3);

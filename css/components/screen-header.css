@@ -21,3 +21,15 @@
   top: -20px;
   left: 35px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons > span:last-child svg:hover {
+  animation: rotateCog 3s linear infinite;
+}

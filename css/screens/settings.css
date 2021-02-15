@@ -19,7 +19,17 @@
   opacity: 0.9;
 }
 .settings-setting span {
+  margin-right: 10px;
   padding-top: 3px;
   padding-left: 18px;
   font-size: 22px;
+}
+.settings-list {
+  margin: 10px;
+}
+.settings-list:last-child {
+  border-top: var(--main-border);
+}
+.settings-setting:last-child {
+  border-bottom: none;
 }

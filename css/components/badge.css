@@ -4,7 +4,8 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  padding-top: 1px;
+  padding-top: 3px;
+  padding-right: 1px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -62,3 +62,20 @@
   display: flex;
   align-items: center;
 }
+#user-component__channel {
+  background-color: var(--kokoa-yellow);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#user-component__channel svg {
+  position: absolute;
+  width: 45px;
+}
+#user-component__channel span {
+  color: var(--kokoa-yellow);
+  padding-top: 3px;
+  z-index: 3;
+}

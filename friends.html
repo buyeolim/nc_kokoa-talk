@@ -27,7 +27,7 @@
         </svg>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>23:48</span>
       </div>
       <div class="status-bar__column">
         <sapn>11%</sapn>
@@ -159,11 +159,11 @@
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="https://avatars.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
+            src="https://avatars.githubusercontent.com/u/48405400?s=460&v=4"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Nicolas</h4>
+            <h4 class="user-component__title">Buyeolim</h4>
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
         </div>
@@ -190,14 +190,31 @@
           </svg>
         </div>
 
-        <!-- Friend 1 -->
+        <!-- Channels information -->
         <div class="user-component">
           <!-- photo and name -->
           <div class="user-component__column">
-            <img
-              src="https://avatars.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
+            <div
               class="user-component__avatar user-component__avatar--sm"
-            />
+              id="user-component__channel"
+            >
+              <span>Ch</span>
+              <svg
+                class="w-6 h-6 nav-icon"
+                fill="currentColor"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                ></path>
+              </svg>
+            </div>
+
             <div class="user-component__text">
               <h4 class="user-component__title user-component__title--not-bold">
                 Channel
@@ -225,6 +242,24 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Friend 1 -->
+      <div class="user-component">
+        <!-- photo and name -->
+        <div class="user-component__column">
+          <img
+            src="https://avatars.githubusercontent.com/u/3612017?s=400&u=b744af8b355b4e4e2d6a631ccd3287c1e2978dad&v=4"
+            class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Nicolas
+            </h4>
+          </div>
+        </div>
+        <!-- etc -->
+        <div class="user-component__column"></div>
       </div>
     </main>
 
@@ -305,6 +340,31 @@
         </li>
       </ul>
     </nav>
+    <!-- empty space for scroll -->
+    <div id="for-scroll"></div>
+
+    <!-- Splash screen -->
+    <div id="splash-screen">
+      <svg
+        class="w-6 h-6 nav-icon"
+        fill="currentColor"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- Screen size warning -->
+    <div id="no-mobile">
+      <sapn>Your screen is too big</sapn>
+    </div>
   </body>
   <!-- svg img from 'heroicons.dev' -->
 </html>
