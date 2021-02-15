@@ -1,0 +1,25 @@
+.settings-setting {
+  padding: 20px 0;
+  border-bottom: var(--sub-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
+.settings__setting-column .noti-text {
+  padding-top: 6px;
+  font-size: 20px;
+  color: var(--text-silver);
+}
+.settings-setting svg {
+  width: 33px;
+  opacity: 0.9;
+}
+.settings-setting span {
+  padding-top: 3px;
+  padding-left: 18px;
+  font-size: 22px;
+}

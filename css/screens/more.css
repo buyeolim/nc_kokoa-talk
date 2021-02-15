@@ -1,0 +1,31 @@
+.more-suggenstions {
+  margin-top: 15px;
+  padding-top: 25px;
+  border-top: var(--main-border);
+}
+.more-suggenstions__title {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.more-suggestions__icons {
+  display: flex;
+}
+.more-suggestions__icon {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.more-suggestions__icon span {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-silver);
+}
+.more-suggenstions__icon-image {
+  background-color: var(--kokoa-yellow);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}

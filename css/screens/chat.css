@@ -1,0 +1,129 @@
+#chat-screen {
+  background-color: var(--chat-background-color);
+  height: 300vh;
+}
+#chat-screen .alt-screen-header {
+  background-color: inherit;
+  position: fixed;
+  top: 33px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat__timestamp {
+  color: var(--chat-timestamp-text-color);
+  background-color: var(--chat-timestamp-bg-color);
+  margin-bottom: 30px;
+  padding: 10px 15px 8px 15px;
+  border-radius: 16px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 18px;
+}
+.message__author {
+  opacity: 0.8;
+  font-size: 18px;
+  margin-bottom: 7px;
+  display: block;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  background-color: white;
+  margin-right: 7px;
+  padding: 14px;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+}
+.message__time {
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: var(--kokoa-yellow);
+  margin-right: 0;
+  margin-left: 7px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply__column {
+  display: flex;
+  justify-content: center;
+}
+.reply .reply__column:first-child {
+  width: 8%;
+}
+.reply .reply__column:last-child {
+  width: 92%;
+  position: relative;
+}
+.reply input {
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+.reply__column svg {
+  width: 30px;
+}
+.reply__column:last-child > svg,
+.reply__column:last-child > button {
+  position: absolute;
+}
+.reply__column:last-child > svg {
+  right: 50px;
+  opacity: 0.4;
+  right: 55px;
+  top: 7px;
+}
+
+.reply__column button {
+  background-color: var(--kokoa-yellow);
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
