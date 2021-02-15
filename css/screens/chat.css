@@ -56,6 +56,11 @@
   height: 50px;
   margin-right: 10px;
   border-radius: 18px;
+  box-sizing: border-box;
+}
+.message-row .img-svg {
+  background-color: whitesmoke;
+  padding: 15px;
 }
 .message__author {
   opacity: 0.8;
