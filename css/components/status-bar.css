@@ -1,7 +1,7 @@
 .status-bar {
   background-color: inherit;
   min-width: 320px;
-  width: 100%;
+  width: 100vw;
   height: 32px;
   display: flex;
   justify-content: center;
